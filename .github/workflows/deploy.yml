@@ -20,7 +20,7 @@ jobs:
           sudo apt-get install sshpass
           sudo apt-get install jq
 
-      - name: 登录各个serv00并执行保活脚本
+      - name: 登录serv00并执行保活脚本
         env:
           HOSTS_JSON: ${{ secrets.HOSTS_JSON }}
           TELEGRAM_TOKEN: ${{secrets.TELEGRAM_TOKEN}}
